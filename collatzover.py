@@ -32,6 +32,10 @@ def test(n):
 n = 1
 
 while True:
+    if n <= 0:
+        print("The computer's maximum capacity was reached...")
+        break
+    
     print("Testing number " + str(n) + "...")
     
     if test(n):
